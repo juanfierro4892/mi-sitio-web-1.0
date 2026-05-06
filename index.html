@@ -1,44 +1,88 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="es">
+<head>
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Quien soy?</title>
-  </head>
-    <body class="text-center bg-blue-100">
-      <p class="text-xl">¡Hola mundo!</p>
-         <h1 class="text-blue-500"> Mi nombre es Juan Morcote </h1 class="text-blue-500">
-            <h1>  Aca voy a contar un poco sobre mi: </h1>
-         <h1>  Soy un adolescente de Colombia mas especificamente del departamento de Boyacá, tengo 15 años, me gusta aprender cosas nuevas y desafiarme a mi mismo, me encanta escuchar musica en ingles y rock en español, me considero como un buen lector y cinefilo, y por ultimo un chico gamer. </h1>
-       <h1 class="text-red-500"> Aca voy a mostrar un top de mis personajes/franquicias favoritas de peliculas, libros y videojuegos  </h1 class="text-red-500"> 
+    <title>¿Quién soy?</title>
+    <style>
+  
+        .images {
+            width: 350px; 
+            height: 200px;
+            object-fit: cover;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body class="bg-blue-100 pb-20 font-sans">
 
-<p class="text-xl">1.</p>      
-      <img src="https://i.pinimg.com/236x/e7/f2/74/e7f2743abcea7fd65b0f8be31606ba79.jpg" />
-              <h1>Shep de la pelicula animada de Interstella 5555 de Leiji Matsumoto y Daft Punk </h1>
+    <
+    <div class="fixed top-0 right-0 p-4 z-10">
+        <button onclick="cambiarIdioma('es')" class="bg-white px-3 py-1 border rounded-l shadow-sm hover:bg-gray-100">ES</button>
+        <button onclick="cambiarIdioma('en')" class="bg-white px-3 py-1 border rounded-r shadow-sm hover:bg-gray-100">EN</button>
+    </div>
 
-      <p class="text-xl">2.</p> 
-      <img src="https://m.media-amazon.com/images/M/MV5BMTY3MTI5NjQ4Nl5BMl5BanBnXkFtZTcwOTU1OTU0OQ@@._V1_FMjpg_UX999_.jpg" />
-       <h1>Aca la pelicula de Pacific Rim una de las mejores en la lucha de mechas o en este caso Jaeguers contra monstruos o Kaijus </h1>
+   
+    <header class="text-center py-12">
+        <h1 class="text-4xl font-bold text-blue-600 mb-2">Juan Morcote</h1>
+        <p class="text-lg text-gray-700 max-w-xl mx-auto px-4" 
+           data-es="Soy un adolescente de Boyacá, Colombia. Me gusta aprender cosas nuevas, leer, el cine y los videojuegos."
+           data-en="I'm a teenager from Boyacá, Colombia. I love learning new things, reading, movies, and gaming.">
+           Soy un adolescente de Boyacá, Colombia. Me gusta aprender cosas nuevas, leer, el cine y los videojuegos.
+        </p>
+    </header>
 
-          <p class="text-xl">3.</p> 
-      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh8WFHdU0Idvr_ukYPfnREB-qcVoxdP1jNKM-6CVvCr7nfBYZXfNEv4X5xMOBWV1yfFS5IL2JnN7s7ObuCtg1rzfcbun3QxxWSioLSkmuEt_Fz8EBEF2eUBkuM58lLYVUTnBorJe_ab8k71/w400-h176/Back+to+the+Future+Trilogy.jpg" />
-       <h1>La saga de Back to the Future una de las mejores trilogias en mi opinion </h1>
+    <section class="max-w-4xl mx-auto px-4">
+        
+     
+        <div class="flex flex-col md:flex-row items-center gap-8 mb-16">
+            <div class="flex-1 text-right">
+                <h3 class="text-2xl font-bold text-blue-500">Interstella 5555</h3>
+                <p class="mt-2 text-gray-600" data-es="Shep de la película animada de Daft Punk." data-en="Shep from Daft Punk's animated movie.">
+                    Shep de la película animada de Daft Punk.
+                </p>
+            </div>
+            <div class="flex-1">
+                <img src="https://i.pinimg.com/236x/e7/f2/74/e7f2743abcea7fd65b0f8be31606ba79.jpg" class="mi-imagen">
+            </div>
+        </div>
 
-      <p class="text-xl">4. Iniciamos con los libros</p> 
-      <img src="https://static.wikia.nocookie.net/biblioteca-virtual-de-literatura/images/9/97/Harry_Potter.jpg/revision/latest/scale-to-width-down/1000?cb=20211014064235&path-prefix=es" />
-      <h1>Los libros de Harry Potter incluyendo sus peliculas </h1>
+     
+        <div class="flex flex-col md:flex-row-reverse items-center gap-8 mb-16">
+            <div class="flex-1 text-left">
+                <h3 class="text-2xl font-bold text-red-500">Pacific Rim</h3>
+                <p class="mt-2 text-gray-600" data-es="Una de las mejores películas de Jaegers contra Kaijus." data-en="One of the best Jaeger vs Kaiju movies.">
+                    Una de las mejores películas de Jaegers contra Kaijus.
+                </p>
+            </div>
+            <div class="flex-1">
+                <img src="https://m.media-amazon.com/images/M/MV5BMTY3MTI5NjQ4Nl5BMl5BanBnXkFtZTcwOTU1OTU0OQ@@._V1_FMjpg_UX999_.jpg" class="mi-imagen">
+            </div>
+        </div>
+
       
-      <p class="text-xl">5.</p>
-       <img src="https://i0.wp.com/lalibretadenani.com/wp-content/uploads/2025/07/robert-langdon.png?fit=816%2C816&ssl=1" />
-       <h1>La saga de libros de Robert Langdon </h1>
+        <div class="flex flex-col md:flex-row items-center gap-8 mb-16">
+            <div class="flex-1 text-right">
+                <h3 class="text-2xl font-bold text-blue-500">Back to the Future</h3>
+                <p class="mt-2 text-gray-600" data-es="La mejor trilogía sobre viajes en el tiempo." data-en="The best time travel trilogy.">
+                    La mejor trilogía sobre viajes en el tiempo.
+                </p>
+            </div>
+            <div class="flex-1">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh8WFHdU0Idvr_ukYPfnREB-qcVoxdP1jNKM-6CVvCr7nfBYZXfNEv4X5xMOBWV1yfFS5IL2JnN7s7ObuCtg1rzfcbun3QxxWSioLSkmuEt_Fz8EBEF2eUBkuM58lLYVUTnBorJe_ab8k71/w400-h176/Back+to+the+Future+Trilogy.jpg" class="mi-imagen">
+            </div>
+        </div>
 
-       <p class="text-xl">6. Un poco de videojuegos</p>
-      <img src="https://preview.redd.it/whats-everyones-opinion-on-all-the-arkham-games-v0-jabxyid5guie1.jpg?width=1080&crop=smart&auto=webp&s=69384affb79017a12ef8d0f977bb29b262a0cc76" />
-      <h1>La saga de Batman Arkham obras maestras aun a pesar de tener ya sus años </h1>
+    </section>
 
-      <p class="text-xl">7.</p>
-       <img src="https://image.api.playstation.com/gs2-sec/appkgo/prod/CUSA05749_00/4/i_d1fb05cea9c9978c82fce182d4e79120430b33de101d0652ef91edf150fedb9b/i/icon0_01.png" />
-      <h1>El Battlefront II, For the Republic! </h1>
-        </body>
-              
+    <script>
+        function cambiarIdioma(lang) {
+            const elementos = document.querySelectorAll('[data-es]');
+            elementos.forEach(el => {
+                el.innerText = el.getAttribute('data-' + lang);
+            });
+        }
+    </script>
 
+</body>
 </html>
